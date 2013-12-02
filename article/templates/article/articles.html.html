@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>/Users/mt/Documents/Programming/Python/django/projects/polltut/yt_tut/article/templates/article/articles.html</title>
+    <style type="text/css">
+    body.default {
+    font-family: Monaco;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 12.0px;
+    font-weight: normal;
+    font-style: normal;
+}
+span.bracebad {
+    color: #c86464;
+    font-weight: bold;
+}
+span.attribute_value {
+    color: #2f4f2f;
+}
+span.tags {
+    color: #0032ff;
+}
+span.indent_guides {
+    color: #808080;
+}
+span.variables {
+}
+span.attribute_name {
+    color: #871f78;
+}
+span.pi_content {
+}
+span.numbers {
+    color: #8b0000;
+}
+span.cdata {
+    color: #00008b;
+}
+span.keywords {
+    color: #871f78;
+}
+span.linenumbers {
+    color: #989898;
+}
+span.regex {
+    color: #c86400;
+}
+span.default {
+}
+span.identifiers {
+}
+span.entity_references {
+}
+span.comments {
+    color: #696969;
+    font-style: italic;
+}
+span.strings {
+    color: #23238e;
+}
+span.bracehighlight {
+    color: #c86464;
+    font-weight: bold;
+}
+span.operators {
+    color: #781f87;
+}
+span.control_characters {
+}
+
+    </style>
+    </head>
+    <body class="default"><p>
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">extends</span><span class="default">&nbsp;</span><span class="strings">"base.html"</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">block</span><span class="default">&nbsp;</span><span class="keywords">title</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;Look&nbsp;at&nbsp;all&nbsp;our&nbsp;articles
+</span><br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endblock</span><span class="default">&nbsp;</span><span class="keywords">title</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">block</span><span class="default">&nbsp;</span><span class="identifiers">sidebar</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="tags">&lt;</span><span class="tags">ul</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">li</span><span class="tags">&gt;</span><span class="tags">&lt;</span><span class="tags">a</span><span class="default">&nbsp;</span><span class="attribute_name">href</span><span class="operators">=</span><span class="strings">"/articles/all"</span><span class="tags">&gt;</span><span class="default">Articles</span><span class="tags">&lt;/</span><span class="tags">a</span><span class="tags">&gt;</span><span class="tags">&lt;/</span><span class="tags">li</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">li</span><span class="tags">&gt;</span><span class="tags">&lt;</span><span class="tags">a</span><span class="default">&nbsp;</span><span class="attribute_name">href</span><span class="operators">=</span><span class="strings">"/articles/create"</span><span class="tags">&gt;</span><span class="default">Create&nbsp;Article</span><span class="tags">&lt;/</span><span class="tags">a</span><span class="tags">&gt;</span><span class="tags">&lt;/</span><span class="tags">li</span><span class="tags">&gt;</span>
+<br /><span class="tags">&lt;/</span><span class="tags">ul</span><span class="tags">&gt;</span>
+<br />
+<br /><span class="tags">&lt;</span><span class="tags">h3</span><span class="tags">&gt;</span><span class="default">Search</span><span class="tags">&lt;/</span><span class="tags">h3</span><span class="tags">&gt;</span>
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="identifiers">csrf_token</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="tags">&lt;</span><span class="tags">input</span><span class="default">&nbsp;</span><span class="attribute_name">type</span><span class="operators">=</span><span class="strings">"text"</span><span class="default">&nbsp;</span><span class="attribute_name">id</span><span class="operators">=</span><span class="strings">"search"</span><span class="default">&nbsp;</span><span class="attribute_name">name</span><span class="operators">=</span><span class="strings">"search"</span><span class="default">&nbsp;</span><span class="tags">/&gt;</span>
+<br />
+<br /><span class="tags">&lt;</span><span class="tags">ul</span><span class="default">&nbsp;</span><span class="attribute_name">id</span><span class="operators">=</span><span class="strings">"search-results"</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;
+</span><br /><span class="tags">&lt;/</span><span class="tags">ul</span><span class="tags">&gt;</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endblock</span><span class="default">&nbsp;</span><span class="identifiers">sidebar</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">block</span><span class="default">&nbsp;</span><span class="identifiers">content</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="tags">&lt;</span><span class="tags">h2</span><span class="tags">&gt;</span><span class="default">Language&nbsp;is:&nbsp;</span><span class="operators">{{</span><span class="identifiers">language</span><span class="operators">}}</span><span class="tags">&lt;/</span><span class="tags">h2</span><span class="tags">&gt;</span>
+<br /><span class="tags">&lt;</span><span class="tags">h2</span><span class="tags">&gt;</span><span class="default">Session&nbsp;Language&nbsp;is:&nbsp;</span><span class="operators">{{</span><span class="identifiers">session_language</span><span class="operators">}}</span><span class="tags">&lt;/</span><span class="tags">h2</span><span class="tags">&gt;</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">if</span><span class="default">&nbsp;</span><span class="identifiers">articles</span><span class="operators">.</span><span class="identifiers">count</span><span class="default">&nbsp;&gt;&nbsp;</span><span class="numbers">0</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="default">&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">for</span><span class="default">&nbsp;</span><span class="identifiers">article</span><span class="default">&nbsp;</span><span class="keywords">in</span><span class="default">&nbsp;</span><span class="identifiers">articles</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;</span><span class="tags">&lt;</span><span class="tags">div</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">h2</span><span class="tags">&gt;</span><span class="tags">&lt;</span><span class="tags">a</span><span class="default">&nbsp;</span><span class="attribute_name">href</span><span class="operators">=</span><span class="strings">"/articles/get/</span><span class="operators">{{</span><span class="identifiers">article</span><span class="operators">.</span><span class="identifiers">id</span><span class="operators">}}</span><span class="strings">"</span><span class="tags">&gt;</span><span class="operators">{{</span><span class="identifiers">article</span><span class="operators">.</span><span class="identifiers">title</span><span class="operators">}}</span><span class="tags">&lt;/</span><span class="tags">a</span><span class="tags">&gt;</span><span class="tags">&lt;/</span><span class="tags">h2</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">p</span><span class="tags">&gt;</span><span class="operators">{{</span><span class="identifiers">article</span><span class="operators">.</span><span class="identifiers">body</span><span class="operators">}}</span><span class="tags">&lt;/</span><span class="tags">p</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">p</span><span class="tags">&gt;</span><span class="operators">{{</span><span class="identifiers">article</span><span class="operators">.</span><span class="identifiers">likes</span><span class="operators">}}</span><span class="default">&nbsp;people&nbsp;liked&nbsp;this&nbsp;article</span><span class="tags">&lt;/</span><span class="tags">p</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;</span><span class="tags">&lt;/</span><span class="tags">div</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endfor</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">else</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="tags">&lt;</span><span class="tags">p</span><span class="tags">&gt;</span><span class="default">None&nbsp;to&nbsp;show!</span><span class="tags">&lt;/</span><span class="tags">p</span><span class="tags">&gt;</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endif</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endblock</span><span class="default">&nbsp;</span><span class="identifiers">content</span><span class="operators">%}</span>
+</p></body></html>

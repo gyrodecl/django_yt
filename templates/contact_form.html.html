@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>/Users/mt/Documents/Programming/Python/django/projects/polltut/yt_tut/templates/contact_form.html</title>
+    <style type="text/css">
+    body.default {
+    font-family: Monaco;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 12.0px;
+    font-weight: normal;
+    font-style: normal;
+}
+span.bracebad {
+    color: #c86464;
+    font-weight: bold;
+}
+span.attribute_value {
+    color: #2f4f2f;
+}
+span.tags {
+    color: #0032ff;
+}
+span.indent_guides {
+    color: #808080;
+}
+span.variables {
+}
+span.attribute_name {
+    color: #871f78;
+}
+span.pi_content {
+}
+span.numbers {
+    color: #8b0000;
+}
+span.cdata {
+    color: #00008b;
+}
+span.keywords {
+    color: #871f78;
+}
+span.linenumbers {
+    color: #989898;
+}
+span.regex {
+    color: #c86400;
+}
+span.default {
+}
+span.identifiers {
+}
+span.entity_references {
+}
+span.comments {
+    color: #696969;
+    font-style: italic;
+}
+span.strings {
+    color: #23238e;
+}
+span.bracehighlight {
+    color: #c86464;
+    font-weight: bold;
+}
+span.operators {
+    color: #781f87;
+}
+span.control_characters {
+}
+
+    </style>
+    </head>
+    <body class="default"><p>
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">extends</span><span class="default">&nbsp;</span><span class="strings">"base.html"</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br />
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">block</span><span class="default">&nbsp;</span><span class="identifiers">content</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">h2</span><span class="tags">&gt;</span><span class="default">Contact&nbsp;Us</span><span class="tags">&lt;/</span><span class="tags">h2</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">p</span><span class="tags">&gt;</span><span class="default">Step&nbsp;&nbsp;</span><span class="operators">{{</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">steps</span><span class="operators">.</span><span class="identifiers">step1</span><span class="operators">}}</span><span class="default">&nbsp;of&nbsp;</span><span class="operators">{{</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">steps</span><span class="operators">.</span><span class="identifiers">count</span><span class="operators">}}</span><span class="tags">&lt;/</span><span class="tags">p</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">for</span><span class="default">&nbsp;</span><span class="identifiers">field</span><span class="default">&nbsp;</span><span class="keywords">in</span><span class="default">&nbsp;</span><span class="identifiers">form</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{{</span><span class="identifiers">field</span><span class="operators">.</span><span class="identifiers">error</span><span class="operators">}}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endfor</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;
+</span><br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">form</span><span class="default">&nbsp;</span><span class="attribute_name">action</span><span class="operators">=</span><span class="strings">"/contact/"</span><span class="default">&nbsp;</span><span class="attribute_name">method</span><span class="operators">=</span><span class="strings">"post"</span><span class="tags">&gt;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="identifiers">csrf_token</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">table</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{{</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">management_form</span><span class="default">&nbsp;</span><span class="operators">}}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">if</span><span class="default">&nbsp;</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">form</span><span class="operators">.</span><span class="identifiers">forms</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{{</span><span class="default">&nbsp;</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">form</span><span class="operators">.</span><span class="identifiers">management_form</span><span class="default">&nbsp;</span><span class="operators">}}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">for</span><span class="default">&nbsp;</span><span class="identifiers">form</span><span class="default">&nbsp;</span><span class="keywords">in</span><span class="default">&nbsp;</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">form</span><span class="operators">.</span><span class="identifiers">forms</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{{</span><span class="identifiers">form</span><span class="operators">}}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endfor</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">else</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{{</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">form</span><span class="operators">}}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endif</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;/</span><span class="tags">table</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">if</span><span class="default">&nbsp;</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">steps</span><span class="operators">.</span><span class="identifiers">prev</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">button</span><span class="default">&nbsp;</span><span class="attribute_name">name</span><span class="operators">=</span><span class="strings">"wizard_goto_step"</span><span class="default">&nbsp;</span><span class="attribute_name">type</span><span class="operators">=</span><span class="strings">"submit"</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute_name">value</span><span class="operators">=</span><span class="strings">"</span><span class="operators">{{</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">steps</span><span class="operators">.</span><span class="identifiers">first</span><span class="operators">}}</span><span class="strings">"</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"first&nbsp;step"
+</span><br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;/</span><span class="tags">button</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">button</span><span class="default">&nbsp;</span><span class="attribute_name">name</span><span class="operators">=</span><span class="strings">"wizard_goto_step"</span><span class="default">&nbsp;</span><span class="attribute_name">type</span><span class="operators">=</span><span class="strings">"submit"</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute_name">value</span><span class="operators">=</span><span class="strings">"</span><span class="operators">{{</span><span class="identifiers">wizard</span><span class="operators">.</span><span class="identifiers">steps</span><span class="operators">.</span><span class="identifiers">prev</span><span class="operators">}}</span><span class="strings">"</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"previous&nbsp;step"
+</span><br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;/</span><span class="tags">button</span><span class="tags">&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endif</span><span class="default">&nbsp;</span><span class="operators">%}</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;</span><span class="tags">input</span><span class="default">&nbsp;</span><span class="attribute_name">type</span><span class="operators">=</span><span class="strings">"submit"</span><span class="default">&nbsp;</span><span class="attribute_name">value</span><span class="operators">=</span><span class="strings">"Submit"</span><span class="default">&nbsp;</span><span class="tags">/&gt;</span>
+<br /><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="tags">&lt;/</span><span class="tags">form</span><span class="tags">&gt;</span>
+<br /><span class="operators">{%</span><span class="default">&nbsp;</span><span class="keywords">endblock</span><span class="default">&nbsp;</span><span class="identifiers">content</span><span class="default">&nbsp;</span><span class="operators">%}</span></p></body></html>

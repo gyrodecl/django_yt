@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Comment to our article{% endblock title %}
+        
+{% block sidebar %}
+    <ul>
+        <li><a href="{% url 'get_article' article.id %}">Cancel</a></li>
+    </ul>
+{% endblock sidebar %}
+
+
+{% block content %}
+    <form method="post" action="{% url 'add_comment' article.id  %}" >
+          {% csrf_token %}
+          <ul>
+             {{form.as_ul}}
+          </ul>
+          <input type="submit" name="submit" value="Add Comment Now" />
+    </form>
+    
+{% endblock content %}

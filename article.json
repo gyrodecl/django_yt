@@ -1,0 +1,62 @@
+[
+{
+    "pk": 1, 
+    "model": "article.article", 
+    "fields": {
+        "body": "blah blah", 
+        "pub_date": "2013-10-30T09:02:33.678Z", 
+        "likes": 8, 
+        "title": "test 1"
+    }
+},
+{
+    "pk": 2, 
+    "model": "article.article", 
+    "fields": {
+        "body": "We have some text for text 2", 
+        "pub_date": "2013-10-30T09:03:08Z", 
+        "likes": 1, 
+        "title": "test 2"
+    }
+},
+{
+    "pk": 3, 
+    "model": "article.article", 
+    "fields": {
+        "body": "blah blah", 
+        "pub_date": "2013-10-30T09:03:27.924Z", 
+        "likes": 7, 
+        "title": "test 3"
+    }
+},
+{
+    "pk": 4, 
+    "model": "article.article", 
+    "fields": {
+        "body": "random keystrokes to see if it works", 
+        "pub_date": "2013-01-27T08:00:00Z", 
+        "likes": 1, 
+        "title": "Test 7"
+    }
+},
+{
+    "pk": 1, 
+    "model": "article.comment", 
+    "fields": {
+        "body": "first!", 
+        "article": 1, 
+        "pub_date": "2013-11-14T09:40:25.507Z", 
+        "name": "Another one"
+    }
+},
+{
+    "pk": 2, 
+    "model": "article.comment", 
+    "fields": {
+        "body": "All set!", 
+        "article": 1, 
+        "pub_date": "2013-11-14T09:40:33.210Z", 
+        "name": "We got it!"
+    }
+}
+]
