@@ -1,5 +1,5 @@
-.pyc
-.db
-.log
+*.pyc
+*.db
+*.log
 
 local_settings.py
