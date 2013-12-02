@@ -31,7 +31,7 @@
  {% for article in articles %}
  <div>
     <h2><a href="/articles/get/{{article.id}}">{{article.title}}</a></h2>
-    <p>{{article.body|lower|article_shorten_body: 50}}</p>
+    <p>{{article.body}}</p>
     <p>{{article.likes}} people liked this article</p>
  </div>
  {% endfor %}
