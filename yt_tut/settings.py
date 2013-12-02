@@ -153,7 +153,7 @@ LOGGING = {
         },
     }
 }
-EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
 WHOOSH_INDEX = os.path.join(PROJECT_DIRECTORY,'whoosh/')
 
