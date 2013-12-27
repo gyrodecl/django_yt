@@ -37,8 +37,8 @@ urlpatterns = patterns('',
     url(r'^accounts/register/$','yt_tut.views.register_user'),
     url(r'^accounts/register_success/$', 'yt_tut.views.register_success'),
     url(r'^contact/$', ContactWizard.as_view([ContactForm1,ContactForm2,ContactForm3])),    #list of forms we wantin wizard
-)
-#if not in DEBUG, then serving online so need to import
+) 
+#if not DEBUG = True, then serving online so need to import
 #the static urls
 if not settings.DEBUG:
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns

@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^search/$', 'article.views.search_titles'),
     url(r'^api/', include(article_resource.urls)),  #these urls automatically come from ModelResource
     url(r'^my_version_api/$', 'article.views.api_myway'),
+    url(r'^$', 'article.views.articles', name="all")
 )

@@ -140,3 +140,54 @@ Traceback (most recent call last):
   File "/Users/mt/.virtualenvs/polltut/lib/python2.7/site-packages/django/template/base.py", line 634, in args_check
     (name, len(nondefs), plen))
 TemplateSyntaxError: article_shorten_body requires 1 arguments, 0 provided
+2013-12-23 21:35:39,517 [WARNING] django.request: Not Found: /articles
+2013-12-23 21:35:44,972 [WARNING] django.request: Not Found: /articles/
+2013-12-23 22:43:48,383 [WARNING] django.request: Not Found: /articles/get/8/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:43:57,303 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:01,874 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:01,940 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:02,626 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:05,189 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:14,308 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:16,010 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:16,077 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:45,231 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:45,308 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:44:54,083 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:45:22,669 [WARNING] django.request: Not Found: /articles/get/8/assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:45:32,628 [WARNING] django.request: Not Found: /articles/get/8/assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:45:41,403 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:45:42,643 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:45:42,715 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:46:18,867 [WARNING] django.request: Not Found: /articles/
+2013-12-23 22:47:09,415 [WARNING] django.request: Not Found: /articles/
+2013-12-23 22:48:03,815 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:48:03,889 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:48:11,333 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:49:15,771 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:49:15,839 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:49:25,088 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:50:25,950 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:51:11,137 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:51:11,215 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:51:18,500 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:51:50,558 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_8_chrisb.png
+2013-12-23 22:51:51,641 [WARNING] django.request: Not Found: /assets/uploaded_files_chrisb.png
+2013-12-23 22:51:52,928 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png_chrisb.png
+2013-12-23 22:51:55,559 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png_chrisb.pn
+2013-12-23 22:51:56,847 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb
+2013-12-23 22:51:57,923 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.
+2013-12-23 22:51:58,596 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:52:02,964 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:52:03,032 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:52:20,132 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:52:49,911 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:52:49,980 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:53:09,724 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:53:09,792 [WARNING] django.request: Not Found: /assets/uploaded_files/1384505126_87_chrisb.png
+2013-12-23 22:53:23,386 [WARNING] django.request: Not Found: /assets/uploaded_files/1384504850_12_Screen Shot 2013-07-09 at 9.37.26 PM.png
+2013-12-23 22:53:28,461 [WARNING] django.request: Not Found: /assets/uploaded_files/1384504850_12_Screen Shot 2013-07-09 at 9.37.26 PM.png
+2013-12-23 22:53:28,529 [WARNING] django.request: Not Found: /assets/uploaded_files/1384504850_12_Screen Shot 2013-07-09 at 9.37.26 PM.png
+2013-12-23 22:53:29,681 [WARNING] django.request: Not Found: /assets/uploaded_files/1384504850_12_Screen Shot 2013-07-09 at 9.37.26 PM.png
+2013-12-23 22:53:30,775 [WARNING] django.request: Not Found: /assets/uploaded_files/1384504850_12_Screen Shot 2013-07-09 at 9.37.26 PM.png
+2013-12-24 02:41:51,314 [WARNING] django.request: Not Found: /

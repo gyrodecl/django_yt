@@ -60,9 +60,10 @@ STATIC_ROOT = os.path.join(PROJECT_DIRECTORY,'static/')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'    #static url points to S3 at bottom
 
 # Additional locations of static files
+#this is putting 'assets' as prefix before 'static'
 STATICFILES_DIRS = (
     ('assets', os.path.join(os.getcwd(),'static/')),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
@@ -163,7 +164,7 @@ try:
     from local_settings import *
 except Exception as e:
     print e.message
-'''
+
 if not DEBUG:
     AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
     AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
@@ -171,4 +172,3 @@ if not DEBUG:
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     S3_URL = 'http://%s.s3.amazonaws.com/assets/' % AWS_STORAGE_BUCKET_NAME
     STATIC_URL = S3_URL
-'''

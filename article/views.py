@@ -40,7 +40,7 @@ def article(request, article_id=1):
     return render(request, 'article/article.html',
                  {'article': Article.objects.get(id=article_id)})
 
-    #this function will set a cookie with value 'lang'
+    #this view will set a cookie with value 'lang'
 def language(request, language='en-us'):
     response = HttpResponse("setting language to %s" % language)  #just shows to user
     response.set_cookie('lang', language)   #cookies are set on response
@@ -90,6 +90,7 @@ def add_comment(request, article_id):
         return render(request,'article/create_comment.html',context)
 
 #respond to AJAX calls---search for articles
+#this url onlyl gets called
 def search_titles(request):
     if request.method == 'POST':
         search_text = request.POST['search_text']

@@ -11,9 +11,11 @@ from django.contrib.formtools.wizard.views import SessionWizardView
 from django.core.mail import send_mail
 import logging
 logr = logging.getLogger(__name__)  #will help us know what data we got
+import os
 
 def login(request):
     c= {}
+    #c['name'] = os.getcwd()
     c.update(csrf(request))    #don't need to pass this c for render since
     return render(request,'login.html', c)   #uses RequestContext
 
@@ -46,7 +48,7 @@ def logout(request):
 
 #most basic registration is username and password
 '''
-First version using build in UserCreationForm
+First version using built-in UserCreationForm
 '''
 '''
 def register_user(request):
@@ -68,7 +70,7 @@ def register_user(request):
         if form.is_valid():   #validator for the form
             form.save()     #in real-world, wouldn't make user active until email validation
             return HttpResponseRedirect('/accounts/register_success')
-    else:    #this is when user first goes to registation page(GET request)
+    else:    #this is when user first goes to registration page(GET request)
         args = {}    #this part is sent the first the user visits the page
         args['form'] = MyRegistrationForm()   #our custom registration form
         return render(request, 'register.html', args)
